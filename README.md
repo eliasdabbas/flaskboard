@@ -14,3 +14,4 @@ Embed Dash apps in Flask apps while maximizing the power of both:
 Check out the various versions available to grow an app from the most minimal integration possible to more elaborate/complex structures
 
 ## [v01 The most minimal irreducible integration](v01)
+## [v02 Using Jinja templates in which we dynamically insert our apps](v02)
