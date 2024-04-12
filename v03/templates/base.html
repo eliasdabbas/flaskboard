@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ country }} Dashboard</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css">
+    </head>
+    <body>
+        <h3>Hello, User</h3>
+        <h3>This is a universal part of the app, available on every page</h3>
+        <h4>This part is dynamic, and a different Dash app is loaded for each URL:</h4>
+        <br>
+        {% block content %}
+          {{ app.index() | safe }}
+        {% endblock content %}
+    </body>
+</html>
