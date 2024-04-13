@@ -16,3 +16,4 @@ Check out the various versions available to grow an app from the most minimal in
 ## [v01 The most minimal irreducible integration](v01)
 ## [v02 Using Jinja templates in which we dynamically insert our apps](v02)
 ## [v03 Creating independent interactive features based on the URL](v03)
+## [v04 Refactoring & using a dataset to dynamically generate dashboards on a large scale](v04)
