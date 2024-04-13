@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the title!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cosmo/bootstrap.min.css">
+    </head>
+    <body>
+    <div style="margin-left: 4%; margin-right: 4%;"><br>
+        <h3>Hello, User</h3>
+        <h3>This is a universal part of the app, available on every page</h3>
+        <h4>This part is dynamic, and a different Dash app is loaded for each URL:</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard1">Dashboard 1</a></li>
+            <li><a href="/dashboard2">Dashboard 2</a></li>
+            <li><a href="/population/India">Population - India</a></li>
+        </ul>
+        <br>
+        {% block content %}
+          {{ app.index() | safe }}
+        {% endblock content %}
+    </div>
+    </body>
+</html>

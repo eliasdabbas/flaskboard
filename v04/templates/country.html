@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ country }} Population Dashboard</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/slate/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css">
+    </head>
+    <body>
+    <div style="margin-left: 4%; margin-right: 4%;" class="dbc"><br>
+        <h1>{{ country }} Population Dashboard</h1>
+        <h3>Source: Gapminder dataset.</h3>
+        <br>
+        <p>{{ summary | safe }}</p>
+        {% block content %}
+          {{ app.index() | safe }}
+        {% endblock content %}
+    </div>
+    </body>
+</html>
